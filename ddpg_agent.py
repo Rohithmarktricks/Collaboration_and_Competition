@@ -1,3 +1,13 @@
+'''Module ddpg_agent.py
+
+This module contains the source code for the ddpg_agent(Actor-Critic network)
+
+Initial part of the code had been adapted from the Udacity's Deep Reinforcement Learning (DRL, 2021)
+and was later modified to solve Unity ML's Tennis Environment.
+
+@author: Rohith Banka.
+'''
+
 import numpy as np
 import random
 import copy

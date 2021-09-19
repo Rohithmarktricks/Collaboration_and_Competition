@@ -1,4 +1,10 @@
-## MADDPG implementation using ddpg_agent.py for Actor-Critic
+'''
+MADDPG implementation using ddpg_agent.py for Actor-Critic.
+Initial part of the code had been adapted from the Udacity's Deep Reinforcement Learning Course (DRL, 2021)
+and was later modified to solve the Tennis Unity ML Environement problem.
+
+@author: Rohith Banka.
+'''
 
 import torch
 

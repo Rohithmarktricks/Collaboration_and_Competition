@@ -1,3 +1,12 @@
+'''Module memory.py
+This module contains the source code for the Replay buffer, which can store the agent's observations.
+Observations are stored as namedtuple.
+
+Initial part of the code has been adapted from Udacity's Deep Reinforcement learning course (DRL), 2021, and later
+modified to fit the use case (to store the Tennis environemnts observations).
+
+@author: Rohith Banka
+'''
 import numpy as np
 import torch
 from collections import namedtuple, deque

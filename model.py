@@ -1,5 +1,11 @@
-import numpy as np
+'''Module model.py
+This module contains the source code for Actor-Critic Network.
+Initial part of the code has been adapted from Udacity Deep Reinforcement learning (DRL) course, 2021
+and modified later to fit the usecase.
 
+@author: Rohith Banka
+'''
+import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -73,7 +79,6 @@ class Critic(nn.Module):
         self.fc3.weight.data.uniform_(-3e-3, 3e-3)
 
     def forward(self, state, action):
-#         print('\n model state {} action {}'.format(state.shape, action.shape))
         """Build a critic (value) network that maps (state, action) pairs -> Q-values."""
 #         if state.dim() == 1:
 #             state = torch.unsqueeze(state,0)
