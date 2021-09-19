@@ -155,7 +155,7 @@ After you have downloaded the relevant zip file, navigate to where you downloade
 ```bash
 conda activate drlnd
 cd Collaboration_and_Competition
-Collaboration_and_Competition >python train_agent.py <Location/Path to Tennis_env/Tennis.exe> <number of episodes> <steps in each episode>
+Collaboration_and_Competition >python train_agent.py <Location/Path to Tennis_env/Tennis.exe> <number of episodes>
 
 ```
 ![DDPG-Agent that's been trained](images/Tennis.gif)
@@ -165,7 +165,7 @@ Collaboration_and_Competition >python train_agent.py <Location/Path to Tennis_en
 ```bash
 conda activate drlnd
 cd Collaboration_and_Competition
-Collaboration_and_Competition >python test_agent.py <Location/path to Tennis_env/Tennis.exe> <path to saved models weights .pth file>
+Collaboration_and_Competition >python test_agent.py <Location/path to Tennis_env/Tennis.exe> <path to saved models weights .pth file> <num_episodes>
 ```
 
 ## Training Performance
