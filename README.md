@@ -18,8 +18,8 @@ A  simple project to show how to implement an actor-critic policy gradient netwo
 │   └───unitytrainers
 │       ├───bc
 │       └───ppo
-│ models.py
-│ Continuous_Control.ipynb
+│ model.py
+│ Tennis.ipynb
 │ README.md
 │ memory.py
 | noise.py
@@ -27,9 +27,8 @@ A  simple project to show how to implement an actor-critic policy gradient netwo
 │ Report.pdf
 │ test_agent.py
 │ train_agent.py
-│ train_agentV2.py
 │ ddpg_agent.py
-│ ddpg_agentV2.py
+│ maddpg.py
 │ unity-environment.log
 ├───saved_models
 ├───scores
@@ -38,17 +37,16 @@ A  simple project to show how to implement an actor-critic policy gradient netwo
 
 Important files and folders :
 - 
-- `models.py:` Contains the source code for Actor-Critic Network.
+- `model.py:` Contains the source code for Actor-Critic Network.
 - `ddpg_agent.py:` Contains the source code for DDPG Agent, utilized Actor-Critic network defined in model.py module.
-- `ddpg_agentV2.py:` Contains the source code for training 20 DDPG Agent, utilized Actor-Critic network defined in model.py module.
+- `maddpg.py:` Contains the source code for training Multi-Agent Deep Deterministic Policy Gradient alogrithm,2 DDPG Agents, utilized Actor-Critic network defined in model.py module.
 - `memory.py:` Contains the source code for Replay Buffer.
 - `utils.py:` Contains the source code for generating Plots, CPU/GPU Device.
 - `train_agent.py:` Source code for training 1 agent.
-- `train_agentV2.py:` Source code for training 20 agents.
 - `test_agent.py:` Source code for testing agent.
 - `noise.py:` Source code for Ornstein-Uhlenbeck Noise.
 - `utils.py:` Contains the source code for device mapping(CPU/GPU), plotting etc.
-- `Continuous_Control.ipynb:` Jupyter Notebook (for the project, trained on GPU)
+- `Tennis.ipynb:` Jupyter Notebook (for the project, trained on GPU)
 - `saved_models:` Folder that contains the weigts of trained DQN (.pth format)
 - `scores:` Folder that contains the scores/rewards earned by the DQN agent (.csv format)
 - `python:` The files in this directory are the ML-agents toolkit files and the dependencies thare are required to run the Reacher Environment.
@@ -160,7 +158,7 @@ cd Collaboration_and_Competition
 Collaboration_and_Competition >python train_agent.py <Location/Path to Tennis_env/Tennis.exe> <number of episodes> <steps in each episode>
 
 ```
-![DDPG-Agent that's been trained](images/reacher.gif)
+![DDPG-Agent that's been trained](images/Tennis.gif)
 
 ## Testing
 7. To test the trained agent, you may use the following command:
@@ -175,7 +173,7 @@ The agent has been trained over 10 times, and on average the agent has taken aro
 
 ### Training - Plots
 #### 1 DDPG Agent
-![sample plot of DDPG agent Epochs vs Average Score](images/Average_score.jpg)
+![sample plot of DDPG agent Epochs vs Average Score](images/maddpg_agent_scores.jpg)
 
 
 ## Sample Testing (Jupyter Notebook)

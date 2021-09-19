@@ -126,9 +126,9 @@ class MADDPG():
 
         agent.learn(agent_experience, GAMMA)
 
-    def save(self):
+    def save(self, start_time):
         for idx, agent in enumerate(self.agents):
-            chk_actor_filename = 'checkpoint_agent{}_actor.pth'.format(idx)
-            chk_critic_filename = 'checkpoint_agent{}_critic.pth'.format(idx)
+            chk_actor_filename = 'models/checkpoint_agent{}_actor_{}.pth'.format(idx+1, start_time)
+            chk_critic_filename = 'models/checkpoint_agent{}_critic_{}.pth'.format(idx+1, start_time)
             torch.save(agent.actor_local.state_dict(), chk_actor_filename)
             torch.save(agent.critic_local.state_dict(), chk_critic_filename)
