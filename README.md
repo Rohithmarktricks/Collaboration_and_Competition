@@ -184,9 +184,7 @@ To test the Unity ML environment and the agent, Jupyter Notebook `Tennis.ipynb` 
 - D4PG tries to improve the accuracy of DDPG with the help of distributional approach. A softmax function is used to prioritize the experiences and provide them to the actor.
 
 ## References:
-1. https://towardsdatascience.com/deep-deterministic-policy-gradients-explained-2d94655a9b7b
-2. https://medium.com/intro-to-artificial-intelligence/the-actor-critic-reinforcement-learning-algorithm-c8095a655c14
-3. https://julien-vitay.net/deeprl/DPG.html
-4. https://medium.com/intro-to-artificial-intelligence/deep-deterministic-policy-gradient-ddpg-an-off-policy-reinforcement-learning-algorithm-38ca8698131b
-5. [CONTINUOUS CONTROL WITH DEEP REINFORCEMENT LEARNING](https://arxiv.org/pdf/1509.02971.pdf)
-6. Ravichandiran, Sudharsan. Deep Reinforcement Learning with Python: Master classic RL, deep RL, distributional RL, inverse RL, and more with OpenAI Gym and TensorFlow, 2nd Edition. Packt Publishing.
+1. [Scaling Multi Agent Reinforcement Learning - The Berkeley AI Research Blog](https://bair.berkeley.edu/blog/2018/12/12/rllib/)
+2. [Paper list of multi-agent reinforcement learning](https://github.com/LantaoYu/MARL-Papers)
+3. [Multi-agent Actor Critic](https://arxiv.org/pdf/1706.02275.pdf)
+4. [MADDPG - Medium Article](https://amitp-ai.medium.com/maddpg-91caa221d75e)
