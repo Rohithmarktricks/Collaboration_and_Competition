@@ -172,8 +172,8 @@ Collaboration_and_Competition >python test_agent.py <Location/path to Tennis_env
 The agent has been trained over 10 times, and on average the agent has taken around 1220+ episodes to solve the Unity ML Tennis Environment i.e., to score the atleast +0.5 average reward over 100 episodes. However, the least number of episodes required to solve the environment was 1227 episodes).
 
 ### Training - Plots
-#### 1 DDPG Agent
-![sample plot of DDPG agent Epochs vs Average Score](images/maddpg_agent_scores.jpg)
+#### MADDPG 
+![sample plot of 2 DDPG agentS episodes vs Average Score](images/maddpg_agent_scores.jpg)
 
 
 ## Sample Testing (Jupyter Notebook)
